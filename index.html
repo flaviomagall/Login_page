@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Projeto Piloto</title>
 </head>
 <body>
@@ -24,26 +25,14 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Senha" id="senha">
                 </div>
-                    <input type="submit" class="button_login" onclick="logar(); return false">
+                    <input type="submit" class="button_login" value="Fazer Login" onclick="logar(); return false">
             </div>
         </form>
     </main>
 
-    <script>
-
-        function logar(){
-
-            var usuario = document.getElementById('usuario').value;
-            var senha = document.getElementById("senha").value;
-
-            if(usuario == "teste" && senha == "teste"){
-                alert("sucesso");
-                location.href = "home.html"
-            }else{
-                alert("Usuário não cadastrato")
-            }
-        }
-
+    <script src="scripts.js">
+    logar();
     </script>
+    
 </body>
 </html>
